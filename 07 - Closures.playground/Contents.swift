@@ -23,13 +23,26 @@ import UIKit
 */
 
 // closures are commonly refered to as completion blocks
-let completion1: ()->() = {
+var completion1: ()->() = {
     print("we called a closure!")
 }
 
 // call completion
 completion1()
 
+// functions are closures too, so closures give
+// a way to save functions and treat them like variables
+func voidFunction() {
+    print("we called a function! I think")
+}
+
+// Notice how the function also returns nothing 
+// and takes no parameters, much like our
+// completion block
+completion1 = voidFunction
+
+// call the now stored void function
+completion1()
 
 // closure with no parameters and a boolean return value
 let completion2: ()->(Bool) = {
