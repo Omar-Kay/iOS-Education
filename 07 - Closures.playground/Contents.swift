@@ -51,6 +51,9 @@ completion1()
 */
 
 // closure with no parameters and a boolean return value
+// Note(omark): I see what we're showcasing here, but we need to pivot to a more practical closure;
+// when would this ever be a type that would be used in a real life situation, over a
+// simple bool with value false?
 let completion2: ()->(Bool) = {
     return false
 }
