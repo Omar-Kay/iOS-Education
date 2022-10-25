@@ -44,6 +44,12 @@ completion1 = voidFunction
 // call the now stored void function
 completion1()
 
+/*
+    Insert exercise to showcase how this can be useful for dynamic behavior,
+    keeping it simple only using void closures for now
+    to help it sink in
+*/
+
 // closure with no parameters and a boolean return value
 let completion2: ()->(Bool) = {
     return false
